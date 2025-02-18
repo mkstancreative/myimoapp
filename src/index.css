@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --firstColor: #c0e1c9;
+  --White: #fff;
+  --Black: #0b0706;
+  --textColor: #81838c;
+  --mainBlack: #000;
+  --MilkYWhite: #f2f7f8;
+  --milkYWhite-2: #fbfbfb;
+  --milkYWhite-3: #f2f2f2;
+  --MainGreen: #008751;
+  --headerColor: #002b1a;
+  --backGround1: #6cbf83;
+  --backGround2: #c0e1c9;
+  --blueColor: #1e90ff;
+  --firstRGBA: rgba(0, 0, 0, 0.2);
+  --secRGBA: rgba(0, 0, 0, 0.2);
+  --e-servicesBack1: #e6ffec;
+  --e-servicesBack2: #e6faff;
+  --e-servicesBack3: #f8edff;
+  --e-servicesBack4: #fffae6;
+  --e-servicesBack5: #ffeeee;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* .flexitem_around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexitem_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */

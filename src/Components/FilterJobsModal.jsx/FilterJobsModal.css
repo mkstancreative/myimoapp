@@ -1,0 +1,272 @@
+/* Modal for Filters  */
+.filter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 100;
+  /* flex-wrap: wrap; */
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.filter-modal-block {
+  background-color: var(--White);
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.filter-modal.show {
+  opacity: 1;
+  visibility: visible;
+  /* border: 1px solid red; */
+}
+
+.filter-modal-block a {
+  width: 250px;
+  display: block;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid green;
+}
+.filter-modal-block a:nth-child(3) {
+  background-color: green;
+  color: #fff;
+  box-shadow: 1px 1px 2px grey;
+}
+.filter-modal-block a:nth-child(4) {
+  /* border: 2px solid green; */
+  color: var(--MainGreen);
+}
+.filter-block1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: left;
+}
+
+.filter-block1 > div {
+  /* border: 1px solid green;  */
+  flex: 1 0 auto;
+  padding: 10px;
+}
+.filter-salary > span {
+  padding: 10px;
+  /* border: 1px solid grey; */
+  box-shadow: 0px 0px 0.5px grey, -0px 0.1px 0.5px grey;
+  margin: 10px 0;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.filter-salary > span:nth-child(3) {
+  transform: translate(-5px);
+  color: #3575e2;
+  border: 0.5px solid #3575e2;
+}
+.filter-salary > span:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #3575e233;
+  mix-blend-mode: multiply;
+}
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin: 10px 0px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.hline {
+  width: 95%;
+  border: 1px solid grey;
+  margin: 0 auto;
+}
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 16px;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmarkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 2px solid #ddd;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox-container:hover input ~ .checkmarkbox {
+  border-color: #bbb;
+}
+
+.checkbox-container input:checked ~ .checkmarkbox {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.checkmarkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmarkbox:after {
+  display: block;
+}
+
+.checkmarkbox:after {
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.filter-state select {
+  width: 150px;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+.filter-btn {
+  margin: 10px 0;
+}
+.filter-btn button {
+  padding: 20px;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #008751;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+.filter-btn button:nth-child(1) {
+  background-color: transparent;
+  color: #008751;
+}
+.filter-btn button:nth-child(2) {
+  background-color: #008751;
+  color: #ffff;
+  box-shadow: 0px 0px 0.5px grey, -0px 0.1px 0.5px grey;
+}
+
+@media screen and (max-width: 700px) {
+  .filter-modal {
+    flex-wrap: wrap;
+    padding: 10px;
+    overflow-y: scroll;
+    scrollbar-width: hidden;
+    gap: 1rem;
+  }
+
+  .filter-modal-block {
+    width: 100%;
+  }
+
+  .filter-block1 {
+    flex-wrap: wrap;
+  }
+  .filter-block1 > div {
+    width: 100%;
+  }
+  .filter-state {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .filter-state select {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .filter-btn button {
+    padding: 10px;
+    width: 150px;
+    margin: unset;
+  }
+  .filter-btn button:nth-child(2) {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,379 @@
+/* RESPONSIVE STARTS */
+@media screen and (max-width: 700px) {
+  main {
+    padding: 1rem;
+  }
+
+  /* HOME PAGE STARTS */
+  .vision-advocate {
+    padding: unset;
+  }
+  .vision-advocate-block1 {
+    margin-bottom: 2rem;
+  }
+  .vision-advocate-block2 > h1 {
+    font-size: 2.1em;
+  }
+
+  .vision-advocate-block1-sub,
+  .vision-advocate-block1 > div:last-of-type {
+    width: unset;
+  }
+  .e-governemt-section {
+    padding: 10px;
+    padding-top: 2rem;
+    margin-top: 3rem;
+  }
+  .e-governemt-block1 {
+    text-align: left;
+    padding: unset;
+    margin-bottom: 1rem;
+  }
+  .e-governemt-block1 > p {
+    font-size: 1em;
+  }
+
+  .e-governemt-block2 > div {
+    width: 100%;
+  }
+  .imo-tourism {
+    flex-direction: row-reverse;
+    padding: unset;
+    padding-bottom: 2rem;
+  }
+
+  .access-vital {
+    padding: unset;
+  }
+  .access-vital-block2 {
+    margin-top: 2rem;
+  }
+
+  .access-vital-block2 h1 {
+    font-size: 40px;
+  }
+
+  .news_portal_section {
+    margin-top: 4rem;
+    padding: unset;
+  }
+  .news_portal2 {
+    padding: unset;
+  }
+
+  .get-in-touch {
+    margin-top: 5rem;
+    padding: unset;
+  }
+
+  .get-in-touch > div:last-of-type h1 {
+    font-size: 30px;
+  }
+  .get-in-touch > div:first-of-type img {
+    border-radius: unset;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .get-in-touch > div:last-of-type {
+    border-radius: unset;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  /* HOME PAGE ENDS */
+
+  /* DIGITAL LITERACY PAGE  STARTS */
+  .search_digital {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .search_digital .form-group {
+    width: 100%;
+  }
+  .search_digital .form-group input {
+    width: 100%;
+    width: unset;
+  }
+
+  .search_digital form {
+    width: 100%;
+  }
+
+  .search_digital form button {
+    display: none;
+  }
+  .search-category_digital,
+  .search-filter_digital {
+    padding: unset;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-category_digital h4,
+  .search-filter_digital h4 {
+    display: none;
+  }
+  .search-category_digital select,
+  .search-filter_digital select {
+    width: 100%;
+  }
+
+  .resource_section {
+    padding: 1rem;
+  }
+
+  .resource_section h1 {
+    margin-bottom: 1rem;
+    margin-left: unset;
+  }
+
+  .resource_block {
+    padding: unset;
+  }
+
+  .resource_block > div {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .resource_block > div > div {
+    width: 100%;
+  }
+  /* DIGITAL LITERACY PAGE  ENDS*/
+
+  /* E-GOVERNMENT PAGE STARTS  */
+  .services {
+    padding: 1rem;
+  }
+
+  .services > h1 {
+    padding-bottom: unset;
+  }
+  .service-block-list {
+    flex: 1 0 auto;
+  }
+
+  /* E-GOVERNMENT PAGE ENDS */
+
+  /* RESOURCE PAGE STARTS  */
+  .search {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .search form {
+    width: 100%;
+    padding: unset;
+  }
+
+  .search .form-group input {
+    width: 100%;
+  }
+  .search .form-group {
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+
+  .search form button {
+    display: none;
+  }
+
+  .search-filter {
+    /* border: 1px solid green; */
+    width: 100%;
+    padding: unset;
+    margin-top: 1rem;
+  }
+
+  .search-filter h4 {
+    display: none;
+  }
+
+  .search-filter select {
+    /* border: 1px solid green; */
+    width: 100%;
+  }
+
+  .main-story-section {
+    /* border: 1px solid green; */
+    padding: 1rem;
+  }
+
+  .main-story-section > div:nth-child(1) {
+    display: none;
+  }
+
+  .story-list {
+    width: unset;
+  }
+
+  .story-list > div {
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  /* RESOURCE PAGE ENDS  */
+
+  /* MINISTRY PAGE STARTS */
+  .about-directory-section {
+    padding: 1rem;
+    padding-left: unset;
+    padding-right: unset;
+    /* border: 1px solid red; */
+  }
+
+  .tabs-container {
+    width: unset;
+  }
+  .ministry-block {
+    /* border: 1px solid red; */
+    width: unset;
+    /* padding: unset; */
+  }
+
+  .ministry-block h2 {
+    font-size: 10px;
+  }
+
+  .content.active {
+    /* padding: unset; */
+    padding-left: unset;
+    padding-right: unset;
+    /* border: 1px solid green; */
+    margin-top: 1.5rem;
+  }
+
+  /* MINISTRY PAGE ENDS */
+
+  /* NEWS PAGE STARTS */
+  .news-portal-section {
+    padding: unset;
+  }
+
+  .news-portal h1 {
+    margin: unset;
+    padding: 30px 0;
+  }
+
+  .news-portal2 {
+    padding: unset;
+  }
+
+  .news-portal2 > div {
+    width: 100%;
+  }
+
+  .impact-stories,
+  .latest-sports,
+  .government-news {
+    padding: 5rem 0;
+  }
+
+  .latest-sports {
+    padding-bottom: unset;
+  }
+
+  .latest-sports h1,
+  .government-news h1 {
+    margin: 1rem 0.5rem;
+    font-size: 30px;
+  }
+
+  .latest-sports-block,
+  .government-news-block {
+    padding: 5px;
+  }
+
+  .latest-sports-block > div,
+  .government-news-block > div {
+    width: 100%;
+  }
+
+  .latest-sports a,
+  .government-news a {
+    margin: 1rem 0.5rem;
+  }
+  /* NEWS PAGE ENDS */
+
+  /* JOBS PAGE STARTS  */
+  .search_jobs {
+    width: unset;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  @keyframes fadeUpSearch {
+    from {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(-5rem);
+      opacity: 1;
+    }
+  }
+
+  .search_jobs form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .search_jobs .form_group_jobs {
+    width: 100%;
+  }
+  .search_jobs .form_group_jobs input {
+    width: 100%;
+  }
+
+  .search_jobs form button {
+    display: none;
+  }
+
+  .search_figure button:nth-child(1) {
+    width: 150px;
+  }
+
+  .search_figure button:nth-child(2) {
+    width: 100px;
+    margin-left: 1rem;
+  }
+
+  .jobs_block.active {
+    padding: 15px;
+  }
+
+  .jobs_block > div {
+    width: 100%;
+  }
+  /* JOBS PAGE ENDS */
+
+  /* EMERGENCY PAGE STARTS */
+
+  .emergence-section > h1 {
+    margin-left: unset;
+    text-align: center;
+  }
+  /* EMERGENCY PAGE ENDS */
+
+  /* CONTACT PAGE STARTS */
+  .contact-section {
+    padding: unset;
+  }
+
+  .contact-form {
+    margin: 2rem 0;
+    padding: unset;
+    /* border: 1px solid blue; */
+    padding: 10px;
+  }
+  .contact-form form {
+    padding: unset;
+    width: 100%;
+  }
+  .contact-image {
+    display: none;
+  }
+  /* CONTACT PAGE ENDS */
+}
+/* RESPONSIVE ENDS */

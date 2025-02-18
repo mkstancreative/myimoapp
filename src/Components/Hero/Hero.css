@@ -1,0 +1,228 @@
+/* HERO STARTS */
+
+.hero,
+.hero2 {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 10px solid hotpink; */
+  background-color: var(--backGround2);
+}
+
+.hero2 {
+  position: relative;
+  justify-content: flex-start;
+  /* border: 1px solid green; */
+}
+.hero2:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(66, 57, 82, 0.62);
+  mix-blend-mode: multiply;
+}
+
+.hero-block1 {
+  animation: fadeUpHero1 1s ease-in-out;
+}
+
+@keyframes fadeUpHero1 {
+  from {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.hero-block1 > h1 {
+  font-size: 3em;
+}
+
+.hero-block1 > p {
+  color: var(--headerColor);
+}
+
+.hero > div:first-of-type a,
+.hero2 > div:first-of-type a {
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
+  font-weight: bolder;
+  display: inline-block;
+  margin: 1rem 0;
+  border-radius: 5px;
+  /* border-style: none; */
+  cursor: pointer;
+}
+
+.hero-block-btn1 {
+  background-color: var(--MainGreen) !important;
+  color: var(--White);
+  width: 150px;
+  /* border: 2px solid var(--MainGreen); */
+}
+
+.hero-block-btn2 {
+  width: 100px;
+  border: 1px solid var(--Black);
+  color: var(--Black);
+  margin-left: 1rem !important;
+}
+
+.hero-block-b {
+  color: var(--White);
+  max-width: 600px;
+  transform: translateX(5rem);
+  position: relative;
+  z-index: 100;
+  animation: fadeUpHero 1s ease-in-out forwards;
+  /* border: 1px solid red; */
+}
+
+@keyframes fadeUpHero {
+  from {
+    opacity: 0;
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(5rem);
+    opacity: 1;
+  }
+}
+
+.hero-block-b > p {
+  margin-top: 1rem;
+}
+
+.hero-block2 {
+  max-width: 600px;
+  padding: unset;
+  max-height: 550px;
+  position: relative;
+  transform: translateY(2.3rem);
+  animation: fadeUpHero2 1s ease-in-out forwards;
+  /* border: 1px solid red; */
+}
+.hero-block2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 85%;
+  height: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(185%);
+  z-index: -1;
+}
+@keyframes fadeUpHero2 {
+  from {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero-block2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_form {
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* max-width: 480px; */
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.hero_form img {
+  display: block;
+  cursor: pointer;
+  width: 25px;
+  /* border: 1px solid red; */
+}
+
+.hero_form form > input {
+  padding: 10px;
+  width: 100%;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  /* display: block; */
+}
+
+.hero_form form > button {
+  cursor: pointer;
+  width: 100px;
+  border-style: none;
+  background-color: var(--MainGreen);
+  color: var(--White);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 1px 1px var(--firstRGBA), 0px -1px 1px var(--secRGBA);
+  position: absolute;
+  top: 10px;
+  right: 0.2rem;
+}
+
+.hero_form form input::placeholder {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    height: 100vh;
+    padding: 1rem;
+  }
+  .hero-block1 {
+    margin-top: 2rem;
+    flex: 1 1 auto;
+    /* border: 1px solid red; */
+  }
+
+  .hero-block1 h1 {
+    font-size: 30px;
+  }
+  .hero-block-b {
+    flex: 1 0 300px;
+    padding: 20px;
+    height: 350px;
+    /* border: 1px solid red; */
+  }
+
+  .hero-block2 {
+    max-height: 500px;
+  }
+
+  @keyframes fadeUpHero {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  }
+}
